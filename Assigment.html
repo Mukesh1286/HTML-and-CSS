@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .container{ width: 90%; margin: 0 auto;}
+        .head{ min-height: 40px;  display: flex; justify-content: space-between; align-items: center;background-color: rgb(10, 164, 224);}
+        .head .logo{color: rgb(245, 241, 241);  width: 25%; font-size: 10px;  text-align: center;}
+        .head .menu{ width: 50%; display: flex; justify-content: space-around; margin-right: 15%;  }
+        .head .menu a{ text-decoration: none; color: rgb(248, 241, 241);padding: 8px; width: 15%; text-align: center;}
+        .head .menu .active{background-color: crimson;}
+        .head .menu a:hover{background-color: rgb(9, 224, 27);}
+        .box{margin-top: 5px;}
+    
+        .box .row{display: flex; justify-content: space-between;}
+        .box .row .col{display: flex; justify-content: space-between; width: 25%; margin-left: 0.4%;min-height: 200px; background-color: rgb(218, 201, 201);}
+        
+        .box .row .col .two-row{ justify-content: space-around; width: 100%; min-height: 200px; }
+        .box .row .col .two-row .red{ justify-content: space-around; width: 100%; margin-left: 0.4%;min-height: 100px; background-color: rgb(201, 13, 13);}
+        .box .row .col .two-row .red1{  width: 100%; margin-left: 0.4%;min-height: 100px; background-color: rgb(221, 12, 12);margin-top: 2px;}
+        
+       
+       
+
+        .box5{transition: 0.3s;float: left;width: 24%; min-height: 100px;
+             background-color: rgb(117, 9, 180); margin-left: 1%; margin-top: 5px; 
+              }
+
+        @media screen and (max-width: 600px) {
+        .container{ width: 100%; margin: 0 auto;}
+        /* .head{ min-height: 40px;   align-items: center;background-color: rgb(10, 164, 224); } */
+        .head .logo{color: rgb(245, 241, 241);  width: 100%; font-size: 15px;  text-align: center;  min-height: 40px; background-color: rgb(10, 164, 224); position: fixed;}
+        .head .menu{ width: 0px;   overflow: hidden; }
+        .head .menu a{ overflow: hidden;  }
+        .box{margin-top: 5px;}
+
+        .box .row{ justify-content: space-between; flex-direction: column;}
+        /* .box .row .col{  background-color: rgb(129, 21, 21);} */
+         .box .row .col{ justify-content: space-between; width: 100%; margin-top: 1%;min-height: 100px; background-color: rgb(218, 201, 201);}
+       
+         .box5{width: 48%; min-height: 150px;
+             background-color: rgb(117, 9, 180); margin-left: 1%; margin-top: 5px; 
+              }
+
+        
+              }
+        
+   </style>
+</head>
+<body>
+
+<div class="container">
+        
+    <header>
+        <div class="head">
+            <div class="logo">
+                <h1>COMPANY LOGO</h1>
+            </div>
+          <div class="menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">Registration</a>
+                <a href="#">Maping</a>
+                <a href="#">Members</a>
+            
+            </div>
+        </div>
+    </header>
+    <div class="box">
+        <div class="row">
+            <div class="col">
+              
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col">
+                
+            </div>
+            
+            <div class="col">
+                <div class="two-row">
+                    <div class="red"></div>
+                <div class="red1"></div>
+                </div>
+                
+            </div>
+        </div>
+
+      
+        
+    </div>
+        
+
+    
+
+    <div class="size">
+        <div class="box5">
+            
+
+
+        </div>
+        <div class="box5">
+            
+
+        </div>
+        <div class="box5">
+
+        </div>
+        <div class="box5">
+
+        </div>
+
+
+      </div>
+</div>
+</div>
+
+
+</body>
+</html>
